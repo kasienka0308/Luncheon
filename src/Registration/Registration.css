@@ -6,8 +6,10 @@ section {
   align-items: center;
 }
 label {
-  color: #fff;
   margin-right: 1rem;
+  position: absolute;
+  top: -1.5rem;
+  left: 0.5rem;
 }
 form {
   max-width: 700px;
@@ -15,10 +17,22 @@ form {
 
 .form-element {
   display: flex;
+  position: relative;
+
 }
 
 input,
 select {
+  width: 100%;
+  border: none;
+  background: #f4f8f7;
+  margin-bottom: 3rem;
   margin-left: auto;
-  width: 200px;
+  padding: 1rem;
+}
+
+.error-message {
+  color: tomato;
+  font-size: 3rem;
+
 }
